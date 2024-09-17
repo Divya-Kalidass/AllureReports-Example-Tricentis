@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,7 +23,7 @@ public class DemoWebShopTests {
 
 
     @Test(priority = 1)
-    public void testHomePageTitle() {
+    public void Validate_Homepage_Title() {
         try {
             String title = driver.getTitle();
             Assert.assertEquals(title, "Demo Web Shop");
@@ -34,7 +33,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 2)
-    private void testscrollFunctionality() {
+    private void Test_Scroll_Functionality() {
         try{
 
             Actions actions = new Actions(driver);
@@ -47,7 +46,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 3)
-    public void testSearchFunctionality() {
+    public void Test_Search_Functionality_Of_Tricentis() {
         try {
             WebElement searchBox = driver.findElement(By.id("small-searchterms"));
             searchBox.sendKeys("computer");
@@ -63,7 +62,7 @@ public class DemoWebShopTests {
 
 
     @Test(priority = 4)
-    public void testLoginButton() {
+    public void Test_Login_Button() {
         try{
         driver.findElement(By.linkText("Log in")).click();
         if(driver.getTitle().equals("Demo Web Shop. Login")){
@@ -79,7 +78,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 5)
-    public void testBookButton() {
+    public void Test_Book_Link_From_Menu() {
         try {
             driver.findElement(By.linkText("Books")).click();
             String url = driver.getCurrentUrl();
@@ -91,7 +90,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 6)
-    public void testsideMenu() {
+    public void Test_Electronics_From_Side_Panel() {
         try{
             WebElement element= driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[1]/div[1]/div[2]/ul/li[3]/a"));
             element.click();
@@ -101,7 +100,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 7)
-    public void testWishlistFunctionality() {
+    public void Test_Wishlist_Functionality() {
         try{
         driver.findElement(By.linkText("Books")).click();
         driver.findElement(By.linkText("Fiction")).click();
@@ -114,7 +113,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 8)
-    public void testContactUsForm() {
+    public void Test_Contact_Us_Form() {
         try{
         driver.findElement(By.linkText("Contact us")).click();
         driver.findElement(By.id("FullName")).sendKeys("John Doe");
@@ -129,7 +128,7 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 9)
-    public void testLogout() {
+    public void Test_Logout() {
         try{
         driver.findElement(By.linkText("Log out")).click();
         WebElement loginLink = driver.findElement(By.linkText("Log in"));
@@ -140,11 +139,10 @@ public class DemoWebShopTests {
     }
 
     @Test(priority = 10)
-    public void testSocialMediaLinks() {
+    public void Test_Social_Media_Links() {
         try {
-            WebElement footer = driver.findElement(By.className("footer-upper"));
-            List<WebElement> socialLinks = footer.findElements(By.tagName("a"));
-            Assert.assertTrue(socialLinks.size() > 0);
+            WebElement facebook = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/div[4]/ul/li[1]/a"));
+            Assert.assertTrue(facebook.isDisplayed());
         }catch (Exception e){
             System.out.println("Error occured "+ e);
         }
