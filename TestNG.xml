@@ -2,14 +2,8 @@
 <suite name="Suite_1" parallel="methods" thread-count="1">
     <test name="Test _1">
         <classes>
-            <class name='demo.web.shop.TestRunner'>
-                <methods>
-                    <include name='registerMethod'/>
-                    <include name="loginMethod"/>
-                    <include name="movetodigitaldownload"/>
-                    <include name="enterBillingAddress"/>
-                </methods>
-            </class>
+            <class name='demo.web.shop.TestRunner'/>
+
         </classes>
     </test>
 </suite>

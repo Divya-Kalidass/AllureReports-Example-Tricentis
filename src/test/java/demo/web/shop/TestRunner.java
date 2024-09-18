@@ -15,23 +15,23 @@ public class TestRunner {
 
     }
     @Test(priority = 1)
-    public void registerMethod(){
+    public void User_Register_With_Valid_Credentials(){
         Registration.register();
         BrowserInitiation.quitMethod();
     }
     @Test(dataProviderClass = FunctionUtility.class, dataProvider = "logindata",priority = 2)
-    public void loginMethod(String emailid, String password){
+    public void Login_With_Valid_Credentials(String emailid, String password){
         Login.loginMethod(emailid,password);
     }
 
     @Test(priority = 3)
-    public void movetodigitaldownload(){
+    public void Select_Music_Album_From_Digital_Downloads(){
         DigitalDownloads.digitalDownloads();
         DigitalDownloads.addToCard();
 
     }
     @Test(priority = 4)
-    public void enterBillingAddress(){
+    public void Enter_Valid_Checkout_Details(){
         CheckoutDetails.billingAddress();
         CheckoutDetails.paymentMethod();
         CheckoutDetails.paymentInformation();
