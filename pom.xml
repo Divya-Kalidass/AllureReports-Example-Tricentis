@@ -3,11 +3,19 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
+<<<<<<< HEAD
   <artifactId>TestNG_Runner</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>TestNG_Runner</name>
+=======
+  <artifactId>DemoWebShop-tricentis</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>DemoWebShop-tricentis</name>
+>>>>>>> extentreport_repo/main
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,6 +29,41 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+<<<<<<< HEAD
+=======
+
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.poi</groupId>-->
+<!--      <artifactId>poi-ooxml-schemas</artifactId>-->
+<!--      <version>4.1.2</version>-->
+<!--    </dependency>-->
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>5.2.3</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.3.0</version>
+    </dependency>
+
+>>>>>>> extentreport_repo/main
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -35,6 +78,7 @@
       <version>7.10.2</version>
       <scope>test</scope>
     </dependency>
+<<<<<<< HEAD
 
     <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
     <dependency>
@@ -98,4 +142,7 @@
     </plugins>
   </build>
 
+=======
+  </dependencies>
+>>>>>>> extentreport_repo/main
 </project>
