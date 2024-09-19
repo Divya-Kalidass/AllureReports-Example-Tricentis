@@ -5,8 +5,12 @@
             <class name='org.example'>
                 <methods>
                     <include name='Validate_Homepage_Title'/>
+                    <include name='Test_Scroll_Functionality'/>
                     <include name='Test_Login_Button'/>
-                    <include name='Test_Electronics_From_Side_Panel'/>
+                    <include name='Test_Wishlist_Functionality'/>
+                    <include name='Test_Contact_Us_Form'/>
+                    <include name='Test_Logout'/>
+                    <include name='Test_Social_Media_Links'/>
                 </methods>
             </class>
         </classes>
