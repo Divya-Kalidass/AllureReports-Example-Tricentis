@@ -1,19 +1,24 @@
 package org.example;
 
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
 import static org.example.BrowserFunction.driver;
 
 public class DemoWebShopTests {
 
+    WebDriverWait wait;
 
     @BeforeClass
     public void setUpClass() {
@@ -37,7 +42,7 @@ public class DemoWebShopTests {
         try{
 
             Actions actions = new Actions(driver);
-            actions.scrollToElement(driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/div[2]/h3")));
+            actions.scrollToElement(driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/div[2]/h3"))).perform();
 
         }catch (Exception e){
             System.out.println("Error occured "+ e);
@@ -75,6 +80,45 @@ public class DemoWebShopTests {
         }catch (Exception e){
             System.out.println("Error occured "+ e);
         }
+    }
+
+    @Test
+    public void Login_With_Valid_Credentials(){
+        try {
+          WebElement  login_link_btn = driver.findElement(By.xpath("html/body/div[4]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a"));
+            login_link_btn.click();                                                                     ///html/body/div[4]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a
+//            extentTest.log(Status.PASS,"Login button clicked successfully");
+        }catch (Exception e){
+//            extentTest.log(Status.FAIL,"Cannot click login button, error occurred: "+e);
+        }
+        try {
+            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement   email = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Email")));
+            email.sendKeys("divya.k@bahwancybertek.com");
+//            extentTest.log(Status.PASS,"Value entered in email successfully");
+        }catch (Exception e){
+//             extentTest.log(Status.FAIL,"Cannot enter value in email, error occurred: "+e);
+        }
+
+        try {
+            WebElement   password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Password")));
+            password.sendKeys("Divya.k@0612");
+//            extentTest.log(Status.PASS,"Value entered in password successfully");
+
+        }catch (Exception e){
+//            extentTest.log(Status.FAIL,"Cannot enter value in password, error occurred: "+e);
+        }
+
+        try {
+            WebElement  login_button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")));
+            login_button.click();
+//            extentTest.log(Status.PASS, "Logged in successfully");
+
+        }catch (Exception e){
+//            extentTest.log(Status.FAIL,"Cannot login, error occurred: "+e);
+        }
+
+
     }
 
     @Test(priority = 5)
