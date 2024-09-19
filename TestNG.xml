@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Suite" parallel="None" thread-count="None">
+    <test name="['Sample Test']">
+        <classes>
+            <class name='org.example'>
+                <methods>
+                    <include name='Validate_Homepage_Title'/>
+                    <include name='Test_Login_Button'/>
+                    <include name='Test_Electronics_From_Side_Panel'/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
