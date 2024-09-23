@@ -1,36 +1,116 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">-->
+<!--  <modelVersion>4.0.0</modelVersion>-->
 
-  <groupId>org.example</groupId>
-<<<<<<< HEAD
-  <artifactId>TestNG_Runner</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+<!--  <groupId>org.example</groupId>-->
+<!--<<<<<<< HEAD-->
+<!--  <artifactId>TestNG_Runner</artifactId>-->
+<!--  <version>1.0-SNAPSHOT</version>-->
+<!--  <packaging>jar</packaging>-->
 
-  <name>TestNG_Runner</name>
-=======
-  <artifactId>DemoWebShop-tricentis</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+<!--  <name>TestNG_Runner</name>-->
+<!--=======-->
+<!--  <artifactId>DemoWebShop-tricentis</artifactId>-->
+<!--  <version>1.0-SNAPSHOT</version>-->
+<!--  <packaging>jar</packaging>-->
 
-  <name>DemoWebShop-tricentis</name>
->>>>>>> extentreport_repo/main
-  <url>http://maven.apache.org</url>
+<!--  <name>DemoWebShop-tricentis</name>-->
+<!--&gt;>>>>>> extentreport_repo/main-->
+<!--  <url>http://maven.apache.org</url>-->
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+<!--  <properties>-->
+<!--    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--  </properties>-->
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-<<<<<<< HEAD
-=======
+<!--  <dependencies>-->
+<!--    <dependency>-->
+<!--      <groupId>junit</groupId>-->
+<!--      <artifactId>junit</artifactId>-->
+<!--      <version>3.8.1</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+<!--<<<<<<< HEAD-->
+<!--=======-->
+
+<!--&lt;!&ndash;    &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;      <groupId>org.apache.poi</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <artifactId>poi-ooxml-schemas</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <version>4.1.2</version>&ndash;&gt;-->
+<!--&lt;!&ndash;    </dependency>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;      <groupId>org.apache.poi</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <artifactId>poi</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <version>5.2.3</version>&ndash;&gt;-->
+<!--&lt;!&ndash;    </dependency>&ndash;&gt;-->
+
+<!--    <dependency>-->
+<!--      <groupId>org.apache.poi</groupId>-->
+<!--      <artifactId>poi-ooxml</artifactId>-->
+<!--      <version>5.2.3</version>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/com.aventstack/extentreports &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>com.aventstack</groupId>-->
+<!--      <artifactId>extentreports</artifactId>-->
+<!--      <version>5.1.2</version>-->
+<!--    </dependency>-->
+
+<!--    <dependency>-->
+<!--      <groupId>org.apache.poi</groupId>-->
+<!--      <artifactId>poi</artifactId>-->
+<!--      <version>5.3.0</version>-->
+<!--    </dependency>-->
+
+<!--&gt;>>>>>> extentreport_repo/main-->
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.seleniumhq.selenium</groupId>-->
+<!--      <artifactId>selenium-java</artifactId>-->
+<!--      <version>4.23.0</version>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.testng/testng &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.testng</groupId>-->
+<!--      <artifactId>testng</artifactId>-->
+<!--      <version>7.10.2</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+<!--<<<<<<< HEAD-->
+
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/com.aventstack/extentreports &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>com.aventstack</groupId>-->
+<!--      <artifactId>extentreports</artifactId>-->
+<!--      <version>5.1.2</version>-->
+<!--    </dependency>-->
+
+<!--&lt;!&ndash;    <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;      <groupId>org.apache.poi</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <artifactId>poi</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <version>5.3.0</version>&ndash;&gt;-->
+<!--&lt;!&ndash;    </dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;    <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;      <groupId>org.apache.poi</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <artifactId>poi</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <version>5.2.3</version>&ndash;&gt;-->
+<!--&lt;!&ndash;    </dependency>&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.poi</groupId>-->
+<!--      <artifactId>poi-ooxml</artifactId>-->
+<!--      <version>5.2.3</version>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-testng &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>io.qameta.allure</groupId>-->
+<!--      <artifactId>allure-testng</artifactId>-->
+<!--      <version>2.28.1</version>-->
+<!--    </dependency>-->
+
+<!--&lt;!&ndash;   iwr -useb get.scoop.sh | iex&ndash;&gt;-->
 
 <!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas &ndash;&gt;-->
 <!--    <dependency>-->
@@ -39,110 +119,121 @@
 <!--      <version>4.1.2</version>-->
 <!--    </dependency>-->
 
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
-      <version>5.2.3</version>
-    </dependency>
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.xmlbeans</groupId>-->
+<!--      <artifactId>xmlbeans</artifactId>-->
+<!--      <version>5.2.1</version>-->
+<!--    </dependency>-->
+<!--  </dependencies>-->
 
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi-ooxml</artifactId>
-      <version>5.2.3</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-    <dependency>
-      <groupId>com.aventstack</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>5.1.2</version>
-    </dependency>
+<!--  <build>-->
+<!--    <plugins>-->
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-surefire-plugin</artifactId>-->
+<!--        <version>3.5.0</version>-->
+<!--        <configuration>-->
+<!--          <systemPropertyVariables>-->
+<!--            <allure.results.directory>target/allure-results</allure.results.directory>-->
+<!--          </systemPropertyVariables>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
+<!--    </plugins>-->
+<!--  </build>-->
 
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
-      <version>5.3.0</version>
-    </dependency>
+<!--=======-->
+<!--  </dependencies>-->
+<!--&gt;>>>>>> extentreport_repo/main-->
+<!--</project>-->
 
->>>>>>> extentreport_repo/main
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.23.0</version>
-    </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.10.2</version>
-      <scope>test</scope>
-    </dependency>
-<<<<<<< HEAD
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-    <dependency>
-      <groupId>com.aventstack</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>5.1.2</version>
-    </dependency>
+    <groupId>org.example</groupId>
+    <artifactId>DemoWebShop-tricentis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
-      <version>5.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
-      <version>5.2.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi-ooxml</artifactId>
-      <version>5.2.3</version>
-    </dependency>
+    <name>DemoWebShop-tricentis</name>
+    <url>http://maven.apache.org</url>
 
-    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-    <dependency>
-      <groupId>io.qameta.allure</groupId>
-      <artifactId>allure-testng</artifactId>
-      <version>2.28.1</version>
-    </dependency>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-<!--   iwr -useb get.scoop.sh | iex-->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi-ooxml-schemas</artifactId>
-      <version>4.1.2</version>
-    </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.3.0</version>
+        </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
-    <dependency>
-      <groupId>org.apache.xmlbeans</groupId>
-      <artifactId>xmlbeans</artifactId>
-      <version>5.2.1</version>
-    </dependency>
-  </dependencies>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.0</version>
-        <configuration>
-          <systemPropertyVariables>
-            <allure.results.directory>target/allure-results</allure.results.directory>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.2</version>
+        </dependency>
 
-=======
-  </dependencies>
->>>>>>> extentreport_repo/main
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.23.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.28.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>5.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
