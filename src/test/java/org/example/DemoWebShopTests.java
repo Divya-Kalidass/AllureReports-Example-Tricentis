@@ -31,7 +31,7 @@ public class DemoWebShopTests {
     public void Validate_Homepage_Title() {
         try {
             String title = driver.getTitle();
-            Assert.assertEquals(title, "Demo Web Shop");
+            Assert.assertEquals(title, "Demo Web Shop. Login");
         }catch (Exception e){
             System.out.println("Error occured "+ e);
         }
