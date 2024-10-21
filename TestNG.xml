@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<<<<<<< HEAD-->
-<!--<suite name="Suite_1" parallel="methods" thread-count="1">-->
-<!--    <test name="Test _1">-->
-<!--        <classes>-->
-<!--            <class name='demo.web.shop.TestRunner'/>-->
-
-<!--=======-->
-<suite name="Test Suite" parallel="None" thread-count="0">
-    <test name="['Sample Test']">
-        <classes>
-            <class name='org.example.DemoWebShopTests'>
+    <suite name="Test Suite" parallel="None" thread-count="None">
+    <listeners>
+        <listener class-name="org.example.DemoWebShopTests.TestResultListener3.java"/>
+    </listeners>
+    
+        <test name="Sample Test">
+            <classes>
+                <class name='org.example.DemoWebShopTests'>
                 <methods>
                     <include name='Validate_Homepage_Title'/>
                     <include name='Test_Scroll_Functionality'/>
-                    <include name='Login_With_Valid_Credentials'/>
                     <include name='Test_Book_Link_From_Menu'/>
+                    <include name='Test_Electronics_From_Side_Panel'/>
                 </methods>
             </class>
-<!--&gt;>>>>>> 2180b0edd793755d39f4adc6d033d1a8ce46ecd4-->
         </classes>
-    </test>
-</suite>
+        </test>
+    </suite>
+    
