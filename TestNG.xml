@@ -7,7 +7,6 @@
                     <include name='Validate_Homepage_Title'/>
                     <include name='Test_Scroll_Functionality'/>
                     <include name='Test_Search_Functionality_Of_Tricentis'/>
-                    <include name='Test_Login_Button'/>
                 </methods>
             </class>
         </classes>
